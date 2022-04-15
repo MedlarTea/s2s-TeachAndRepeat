@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find ltr)/config/param.yaml" command="load" />
+    <node name="odom_monitor" pkg = "ltr" type = "odom_monitor" output = "screen">
+    </node>
+    <node name="navigator" pkg = "ltr" type = "navigator" output = "screen">
+    </node>
+</launch>

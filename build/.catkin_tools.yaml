@@ -1,0 +1,6 @@
+devel_space: /home/jing/catkin_ws/src/ltr/devel
+install: false
+install_space: /home/jing/catkin_ws/src/ltr/install
+profile: default
+source_space: /home/jing/catkin_ws/src/ltr/src
+workspace: /home/jing/catkin_ws/src/ltr

@@ -1,0 +1,53 @@
+# For simulation
+map_folder: /home/jing/dingo/myltr/map
+
+global_localization: false
+use_gazebo: true
+# teach
+topological_liner_interval: 0.03
+topological_angle_interval: 0.03
+# repeat
+x_threshold: 0.01
+y_threshold: 0.01
+yaw_threshold: 0.02
+
+scan_offset_linear_gain: 0.
+scan_offset_angular_gain: 0.
+
+max_angular_velocity: 0.2
+max_linear_velocity: 0.6
+PID_Kp_x: 0.8
+PID_Ki_x: 0.1
+PID_Kd_x: 0.2
+PID_Kp_yaw: 0.6
+PID_Ki_yaw: 0.1
+PID_Kd_yaw: 0.3
+
+topo_ltr/lidar_topic: /front/scan
+topo_ltr/odom_topic: /odometry/filtered
+topo_ltr/joy_topic: /bluetooth_teleop/joy
+# topo_ltr/vel_topic: /cmd_vel
+topo_ltr/vel_topic: /dingo_velocity_controller/cmd_vel
+
+# For dingo
+# map_folder: /home/rpil/Data/map
+
+# topological_liner_interval: 0.4
+# topological_angle_interval: 0.08
+
+# scan_offset_linear_gain: 0.1
+# scan_offset_angular_gain: 0.3
+
+# max_angular_velocity: 0.2
+# max_linear_velocity: 0.6
+# PID_Kp_x: 0.3
+# PID_Ki_x: 0.01
+# PID_Kd_x: 0
+# PID_Kp_yaw: 0.6
+# PID_Ki_yaw: 0.1
+# PID_Kd_yaw: 0.2
+
+# topo_ltr/lidar_topic: /scan
+# topo_ltr/odom_topic: /odometry/filtered
+# topo_ltr/joy_topic: /bluetooth_teleop/joy
+# topo_ltr/vel_topic: /cmd_vel
